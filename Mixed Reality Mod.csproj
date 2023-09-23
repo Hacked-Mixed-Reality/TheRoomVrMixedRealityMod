@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>MixedRealityMod</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Assemblies>D:\Steam\steamapps\common\The Room VR\MelonLoader\Il2CppAssemblies</Assemblies>
+		<MelonLoaderDir>D:\Steam\steamapps\common\The Room VR\MelonLoader\net6</MelonLoaderDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>$(MelonLoaderDir)\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>$(MelonLoaderDir)\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppInterop.Runtime">
+			<HintPath>$(MelonLoaderDir)\Il2CppInterop.Runtime.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Il2Cppmscorlib">
+			<HintPath>$(Assemblies)\Il2Cppmscorlib.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSteamVR">
+			<HintPath>$(Assemblies)\Il2CppSteamVR.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(Assemblies)\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>
